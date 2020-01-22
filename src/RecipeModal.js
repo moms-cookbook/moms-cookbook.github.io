@@ -27,7 +27,7 @@ class RecipeModal extends React.Component {
                     <div className="modal-images">
                         <div className="left-arrow">
                             <div>
-                                {"<<"}
+                                {"<"}
                             </div>
                         </div>
                         <div className="image-container">
@@ -35,7 +35,7 @@ class RecipeModal extends React.Component {
                         </div>
                         <div className="right-arrow">
                             <div>
-                                {">>"}
+                                {">"}
                             </div>
                         </div>
                     </div>
