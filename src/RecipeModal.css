@@ -1,0 +1,85 @@
+.recipeModal-container{
+    width: 1000px;
+    height: 500px;
+}
+
+.recipeModal-container .modal-up{
+    width: 100%;
+    height: 85%;
+    background-color: #ffeacc;
+    display: flex;
+    flex-direction: row;
+}
+
+.recipeModal-container .modal-up .modal-images{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.recipeModal-container .modal-up .modal-images .left-arrow{
+    width: 5%;
+    height: 100%;
+    display: flex;
+}
+
+.recipeModal-container .modal-up .modal-images .left-arrow div{
+    font-size: 2rem;
+    margin: auto;
+}
+
+.recipeModal-container .modal-up .modal-images .right-arrow{
+    width: 5%;
+    height: 100%;
+    display: flex;
+}
+
+.recipeModal-container .modal-up .modal-images .right-arrow div{
+    font-size: 2rem;
+    margin: auto;
+}
+
+.recipeModal-container .modal-up .modal-images .image-container{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+}
+
+.recipeModal-container .modal-up .modal-images .image-container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-size: cover;
+    margin: auto;
+}
+
+.recipeModal-container .modal-up .modal-ingredients .ingredients-title{
+    font-size: 2rem;
+    width: 100%;
+    height: 7%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.recipeModal-container .modal-up .modal-ingredients ul{
+    font-size: 1.07rem;
+}
+
+.recipeModal-container .modal-down{
+    width: 100%;
+    height: 15%;
+    background-color: #ffeacc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.recipeModal-container .modal-down button{
+    width: 200px;
+    height: 70%;
+    border-radius: 10px;
+    padding: 10px;
+}
