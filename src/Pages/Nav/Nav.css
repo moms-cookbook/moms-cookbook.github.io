@@ -1,0 +1,58 @@
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    background-color: #8f6ec9;
+  }
+  
+  nav h2 {
+    flex:2;
+    margin: 0;
+    display: inline;
+    font-size: 1.7rem;
+    line-height: 100%;
+    align-self: center;
+    text-align: center;
+    font-family: Arial Black;
+  }
+  
+  nav ul {
+    flex:3;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    font-family: Arial Black;
+  }
+  nav ul li{
+    font-size: 1.7rem;
+    line-height: 100%;
+    vertical-align: middle;
+  }
+  
+@media only screen and (max-width: 550px) {
+    nav h2{
+        font-size: 1.1rem;
+        flex: 1;
+        color: whitesmoke;
+        padding-left: 5px;
+    }
+
+    nav ul{
+        flex: 2;
+        padding-inline-start: 0;
+    }
+
+    nav ul li{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}

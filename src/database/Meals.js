@@ -1,5 +1,5 @@
-var MealArray = [
-    {
+var Meals = {
+    'PatatesToplari':{
         'image': '00001.png',
         'title': 'Patates Topları',
         'ingredients': [
@@ -18,7 +18,7 @@ var MealArray = [
             'Tüm malzemeler bir kaba koyulur ve iyice yoğrulur. Küçük toplar haline getirilir. Servis edilir.'
         ]
     },
-    {
+    'AyvaliKurabiye':{
         'image': '00002.jpeg',
         'title': 'Ayvalı Kurabiye',
         'ingredients': [
@@ -41,9 +41,9 @@ var MealArray = [
             'Tepsiye dizilir ve 250 derecede ısıtılmış fırında 40 dakika pembeleşinceye kadar pişirilir. Pudra şekeri ile servis edilir.'
         ]
     },
-    {
+    'OrdekKurabiyesi':{
         'image': '00003.jpeg',
-        'title': 'Ördek Şeklinde Kurabiye',
+        'title': 'Ördek Kurabiyesi',
         'ingredients': [
             '2 adet yumurta',
             '1 adet portakal',
@@ -67,7 +67,7 @@ var MealArray = [
             'Çörek otu şekildeki gibi hamurun üstüne konulur.'
         ]
     },
-    {
+    'BardaktaYasPasta':{
         'image': '00005.jpeg',
         'title': 'Bardakta Yaş Pasta',
         'ingredients': [
@@ -85,7 +85,7 @@ var MealArray = [
             'Bu tarif yaş pastayı yapmayı beceremeyenler için çok pratik. İsteyen herkes kolaylıkla yapabilir. Afiyet olsun.'
         ]
     },
-    {
+    'YilbasinaOzelSepetler':{
         'image': '00006.jpeg',
         'title': 'Yılbaşına Özel Sepetler',
         'ingredients': [
@@ -107,46 +107,95 @@ var MealArray = [
             'İsteğe göre direkt yuvarlanmış halde de yenebilir.'
         ]
     },
-    {
-        'image': '0000.jpeg',
-        'title': '',
+    'KuruVeYasNaneCayı':{
+        'image': '00007.jpeg',
+        'title': 'KuruVeYasNaneCayı',
         'ingredients': [
+            "1 demet yaş nane veya 1 tatlı kaşığı kuru nane",
+            "4 çay bardağı kaynamış su",
+            "1 dilim limon",
+            "Her 1 bardak su için 1 tatlı kaşığı şeker"
         ],
         'preperation': [
+            "Kaynamış suyu deliğe dökülür ve nane içine yaş veya kuru konur.",
+            "Yarım saat kısık ateşte demleyin.",
+            "Demlendikten sonra bardaklar doldurulur ve isteğe göre bardağa limon sıkılır.",
+            "Limon eklenirse tadı daha iyi olur.",
+            "Püf Noktaları:",
+            "Kuru nane demlenince kırmızı, yaş nanenin demlenmiş hali yeşil olur.",
+            "Griple iyi gelir.",
+            "Çay ne kar demlenir ise renk o kadar kararır."
         ]
     },
-    {
-        'image': '0000.jpeg',
-        'title': '',
+    'MandalinaliLokum':{
+        'image': '00008.jpeg',
+        'title': 'Mandalinalı Lokum',
         'ingredients': [
+            "1 kg mandalina  2 su bardağı suyu elde edilir",
+            "1 su bardağı şeker",
+            "5 kaşık nişasta",
+            "Yarım yemek kaşık tereyağı",
+            "1 paket vanilya",
+            "Hindisdan cevizi",
+            "Yarım su bardağı su"
         ],
         'preperation': [
+            "Mandalinalar meyve sıkacağına alıp suları sıkılır.",
+            "Süzgeçte süzülür .",
+            "Tüm malzemeler tencereye koyulur.",
+            "Kısık ateşte kaynayana kadar karıştırılır.",
+            "Kaynayınca 5 dakika pişirilir.",
+            "Borcam tepsi ıslatılıp dökülür.",
+            "Buharı çıkınca üzeri streç filmiyle kapatılır yoksa beyaz bir poşetle kapatılıp ağzı bağlanır.",
+            "Buzlukta 4 saat bekletilir buzluktan alınıp dilimlenir .",
+            "Hindisdan cevizine bulanıp servis yapılır."
         ]
     },
-    {
-        'image': '0000.jpeg',
-        'title': '',
+    'PatatesliPeynirliKrep':{
+        'image': '00011.jpeg',
+        'title': 'Patatesli Peynirli Krep',
         'ingredients': [
+            "3 yumurta",
+            "1 paket kabartma tozu",
+            "Alabildiği kadar un",
+            "2 su bardağı süt",
+            "3 yemek kaşığı sıvı yağ",
+            "Yarım kase peynir (Kaşar rendelenmiş olsun)",
+            "3 tane haşlanmış patates",
+            "1 çay kaşığı tuz",
+            "Yarım demet maydanoz",
+            "Yarım çay kaşığı kara biber",
+            "Yarım çay kaşığı isot",
+            "Yarım çay kaşığı kimyon",
+            "Yarım kasım domates salçası (Salça tuzlu ise tuz oranını azaltın."
         ],
         'preperation': [
+            "Patatesler rendelenir veya ezilir.",
+            "Maydanozlar doğranır.",
+            "Un, kabartma tozu ve patates hariç tüm malzemeler karıştırılır.",
+            "Kalan malzemeler eklenir ve çırpılır.",
+            "Yağla kızdırılmış tavaya 1 kepçe hamurdan koyulur ve kaşık yardomi ile tavaya yayılır.",
+            "Alt üst pişirilir. İçinde patates olduğundan dikkatlice çevirinin."
         ]
     },
-    {
-        'image': '0000.jpeg',
-        'title': '',
+    'KabakCekirdegiHelva':{
+        'image': '00012.jpeg',
+        'title': 'Kabak Çekirdeği Helva',
         'ingredients': [
+            "2 su bardağı un ( mısır ve öğütülmüş ve kavrulmuş kabak çekirdeği )",
+            "Yarım su bardağı şeker",
+            "Yarım su bardağı kaynamış su",
+            "2 yemek kaşığı tereyağı",
+            "Hindistan cevizi",
+            "Pudra şekeri"
         ],
         'preperation': [
-        ]
-    },
-    {
-        'image': '0000.jpeg',
-        'title': '',
-        'ingredients': [
-        ],
-        'preperation': [
+            "Tereyağı eritilir ve un eklenip 1-2 dakika kavrulur. Şeker ilave edilip karıştırılır.",
+            "Kaynamış su eklenip 5-10 dakika pişirilir.",
+            "Şekildeki gibi yuvarlanır veya kare olarak kesilir.",
+            "Üstü hindistan cevizi ile kaplanır veya pudra şekeri elenir."
         ]
     }
-]
+}
 
-export {MealArray};
+export {Meals};

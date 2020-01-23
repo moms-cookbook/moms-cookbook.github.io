@@ -1,24 +1,21 @@
- import React from 'react';
+import React from 'react';
 import './App.css';
-import RecipeBox from './RecipeBox';
-import Popular from './Popular';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import MainPage from './Pages/MainPage/MainPage'
+import Nav from './Pages/Nav/Nav'
+import Recipe from './Pages/Recipe/Recipe'
 
 function App() {
   return (
-    <div className="app-container">
-      <nav>
-        <h2>Reyhan</h2>
-        <ul>
-           <li>About</li>
-           <li>MainPage</li>
-           <li>Contact</li>
-        </ul>
-      </nav>
-      <div className="screen">
-        <Popular></Popular>
-        <RecipeBox></RecipeBox>
-      </div>
-    </div>
+    <Router>
+      <Nav/>
+      <Switch>
+        <Route exact path="/" component={MainPage} />
+        <Route exact path="/recipe/:id" component={Recipe} />
+        
+      </Switch>
+    </Router>
   );
 }
 
