@@ -1,0 +1,118 @@
+.recipe-container{
+    width: 90%;
+    min-height: 90vh;
+    margin: auto;
+}
+.recipe-container .image-container {
+    display: flex;
+    width: 650px;
+    height: 450px;
+    justify-items: center;
+    padding: 50px;
+}
+.recipe-container .image-container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-size: cover;
+    margin: auto;
+}
+.recipe-container .recipe-title{
+    width: 100%;
+    height: 85px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.recipe-container .recipe-title h1{
+    font-size: 2.7rem;
+    margin: 20px;
+}
+.recipe-container .recipe-bos{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto 0 auto;
+    background-color: #f1edf3;
+    border-radius: 20px;
+}
+
+.recipe-container .recipe-bos .user{
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    background-color: yellowgreen;
+}
+
+.recipe-container .recipe-ingredients{
+    width: 1000px;
+    min-height: 100px;
+    margin: 25px auto 0 auto;
+    background-color: #f1edf3;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.recipe-container .recipe-ingredients h1{
+    font-size: 1.5rem;
+}
+
+.recipe-container .recipe-ingredients ul{
+    font-size: 1.1rem;
+}
+
+.recipe-container .recipe-preperation{
+    width: 1000px;
+    min-height: 100px;
+    margin: 25px auto 0 auto;
+    background-color: #f1edf3;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.recipe-container .recipe-preperation h1{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .recipe-container{
+        width: 100%;
+    }
+    .recipe-container .recipe-title{
+        padding: 0;
+        margin: 0;
+        height: fit-content;
+    }
+    .recipe-container .recipe-title h1{
+        font-size: 1.8rem;
+    }
+    .recipe-container .recipe-bos{
+        width: 96%;
+        flex-direction: column;
+        padding: 0;
+        height: 500px;
+    }
+    .recipe-container .recipe-bos .image-container{
+        width: 90%;
+        padding: 5%;
+        height: 250px;
+    }
+    .recipe-container .recipe-bos .user{
+        height: 100px;
+        width: 90%;
+        padding: 0;
+        margin: 5%;
+    }
+
+    .recipe-container .recipe-ingredients{
+        width: 85%;
+        margin: 25px auto 0 auto;
+        padding: 5%;
+    }
+    .recipe-container .recipe-preperation{
+        width: 85%;
+        margin: 25px auto 0 auto;
+        padding: 5%;
+    }
+}
