@@ -1,0 +1,13 @@
+.add-screen{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    margin: 25px 50px 50px 50px;
+}
+.add-screen input{
+    margin-bottom: 5px;
+}
+.add-screen button{
+    margin-top: 10px;
+}

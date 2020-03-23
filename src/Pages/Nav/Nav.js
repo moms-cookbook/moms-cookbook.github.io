@@ -8,9 +8,9 @@ class Nav extends Component {
             <nav>
                 <h2>Moms Cook Book</h2>
                 <ul>
-                    <li><Link to="/">MainPage</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/">Anasayfa</Link></li>
+                    <li><Link to="/about">Hakkında</Link></li>
+                    <li><Link to="/signup">Sign Up</Link></li>
                 </ul>
             </nav>
         )

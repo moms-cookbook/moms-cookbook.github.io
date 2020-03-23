@@ -31,6 +31,10 @@ nav {
     line-height: 100%;
     vertical-align: middle;
   }
+  nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
   
 @media only screen and (max-width: 550px) {
     nav h2{

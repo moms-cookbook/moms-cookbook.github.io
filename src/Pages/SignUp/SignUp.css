@@ -1,0 +1,14 @@
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 25px 50px 50px 50px;
+}
+
+.sign-up button{
+    margin-top: 25px;
+}
+.sign-up .labell{
+    margin-bottom: 10px;
+}

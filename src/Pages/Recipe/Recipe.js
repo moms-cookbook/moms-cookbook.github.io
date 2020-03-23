@@ -1,14 +1,30 @@
 import React, { Component } from 'react'
-import { Meals } from './../../database/Meals'
 import './Recipe.css'
 
 
 export default class Recipe extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            meal: Meals[props.match.params.id]
+        this.state = { 
+            id: props.match.params.id,
+            meal:{
+                images:[""],
+                title:"",
+                ingredients:[""],
+                preperation:[""]
+            }
         }
+    }
+    async componentDidMount() {
+        console.log("Mounted")
+
+        this.setState({ meal: await this.getRecipe(this.state.id) })
+    }
+
+    async getRecipe(title) {
+
+        var data = await fetch('http://192.168.1.106:3001/recipe/' + title).then(response=>response.json());
+        return data;
     }
 
     ingredientsfunc() {
@@ -29,16 +45,15 @@ export default class Recipe extends Component {
 
     render() {
         return (
-            (this.state.meal === undefined) ?
+            (this.state.meal === undefined || this.state.meal === null) ?
                 <></> :
                 <div className="recipe-container">
                     <div className="recipe-title">
                         <h1>{this.state.meal.title}</h1>
                     </div>
-
                     <div className="recipe-bos">
                         <div className="image-container">
-                            <img alt="main" src={`../../../${this.state.meal.image}`} />
+                            <img alt="main" src={`../../../${this.state.meal.images[0]}`} />
                         </div>
                         <div className="user">
                         </div>
@@ -63,12 +78,12 @@ export default class Recipe extends Component {
                             </ul>
                         </div>
                         <div className="preperation-images">
-                            <img alt="meals" src={`../${this.state.image}`}/>
+                            <img alt="meals" src={`../${this.state.meal.images[0]}`} />
                         </div>
                     </div>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
+                    <br />
                 </div>
         )
     }
