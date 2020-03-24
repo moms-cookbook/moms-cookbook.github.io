@@ -3,7 +3,7 @@ nav {
     display: flex;
     flex-direction: row;
     height: 10vh;
-    background-color: #8f6ec9;
+    background-color: #bcf773;
   }
   
   nav h2 {
@@ -15,6 +15,7 @@ nav {
     align-self: center;
     text-align: center;
     font-family: Arial Black;
+    color: #f68958;
   }
   
   nav ul {
@@ -33,7 +34,7 @@ nav {
   }
   nav ul li a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #f68958;
   }
   
 @media only screen and (max-width: 550px) {

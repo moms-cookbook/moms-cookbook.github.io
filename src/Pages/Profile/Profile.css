@@ -1,0 +1,24 @@
+.profile{
+    width: 750px;
+    height: 100%;
+    display: flex;
+    flex-direction: auto;
+    padding: 50px;
+    background-color: thistle;
+    margin: auto;
+}
+
+.profile .profile-image{
+    width: 200px;
+    height: 200px;
+    background-color: wheat;
+}
+
+.profile .profile-username{
+    width: 500px;
+    height: 75px;
+    margin: 10px;
+}
+.profile .profile-username h1{
+    margin: 15px;
+}

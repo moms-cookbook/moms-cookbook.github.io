@@ -27,6 +27,9 @@ class AddRecipe extends React.Component {
         console.log(data);
         xhr.send(data);
     }
+    componentDidMount(){
+        document.title = "Add Recipe"
+      }
     render() {
         return (
             <div className="add-screen">

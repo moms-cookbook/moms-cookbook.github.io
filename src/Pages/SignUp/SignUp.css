@@ -1,14 +1,16 @@
-.sign-up{
+.signmain .sign-up{
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 300px;
+    height: 225px;
     margin: 25px 50px 50px 50px;
+    background-color: violet;
+    padding: 10px;
 }
 
-.sign-up button{
+.signmain .sign-up button{
     margin-top: 25px;
 }
-.sign-up .labell{
+.signmain .sign-up .labell{
     margin-bottom: 10px;
 }

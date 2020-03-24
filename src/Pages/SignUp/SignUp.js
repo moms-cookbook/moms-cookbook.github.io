@@ -25,22 +25,27 @@ class SignUp extends React.Component {
         console.log(data);
         xhr.send(data);
     }
+
+    componentDidMount() {
+        document.title = "Sign Up"
+    }
     render() {
         return (
-            <div className="sign-up">
-                <div className="labell">
-                    <label>Boşlukları doldurun ve ekleye tıklayın.</label>
-                </div>
-                <label>Kullanıcı Adı</label>
-                <input name="username" value={this.state.username} onChange={(e) => this.setState({ username: e.target.value })} />
-                <label>E-posta</label>
-                <input name="email" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
-                <label>Şifre</label>
-                <input type="password" name="password" value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+            <div className="signmain">
+                <div className="sign-up">
+                    <div className="labell">
+                        <label>Boşlukları doldurun ve ekleye tıklayın.</label>
+                    </div>
+                    <label>Kullanıcı Adı</label>
+                    <input name="username" value={this.state.username} onChange={(e) => this.setState({ username: e.target.value })} />
+                    <label>E-posta</label>
+                    <input name="email" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
+                    <label>Şifre</label>
+                    <input type="password" name="password" value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
 
 
-                <button onClick={this.submit}>Ekle</button>
-            </div>
+                    <button onClick={this.submit}>Ekle</button>
+                </div></div>
         )
     }
 

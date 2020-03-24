@@ -11,6 +11,7 @@ class Nav extends Component {
                     <li><Link to="/">Anasayfa</Link></li>
                     <li><Link to="/about">Hakkında</Link></li>
                     <li><Link to="/signup">Sign Up</Link></li>
+                    <li><Link to="/profile">Profil</Link></li>
                 </ul>
             </nav>
         )
