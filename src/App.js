@@ -15,6 +15,7 @@ class App extends React.Component {
           <Route exact path="/addrecipe" component={require('./Pages/AddRecipe/AddRecipe').default} />
           <Route exact path="/signup" component={require('./Pages/SignUp/SignUp').default} />
           <Route exact path="/profile" component={require('./Pages/Profile/Profile').default} />
+          <Route exact path="/login" component={require('./Pages/Login/Login').default} />
         </Switch>
       </Router>
     );

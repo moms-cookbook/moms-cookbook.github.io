@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Profile.css'
 
 class Profile extends React.Component {
@@ -11,9 +13,10 @@ class Profile extends React.Component {
                 <div className="profile-image">
                     Resim
                 </div>
-                <div  className="profile-about">
+                <div className="profile-about">
                     <label>dsflsdöcbgfhd</label>
                 </div>
+                <Link to="./addrecipe">Yemek tarifi eklemek için tıklayınız.</Link>
             </div>
         );
     }
