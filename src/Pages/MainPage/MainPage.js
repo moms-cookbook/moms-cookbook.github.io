@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainPage.css';
-import RecipeBox from '../../ReactComponents/RecipeBox';
-import Popular from '../../ReactComponents/Popular';
+import  Popular from './../../ReactComponents/Popular'
+
 
 class MainPage extends React.Component {
   componentDidMount(){
@@ -11,7 +11,6 @@ class MainPage extends React.Component {
     return (
       <div className="screen">
         <Popular></Popular>
-        <RecipeBox></RecipeBox>
       </div>
     );
   }

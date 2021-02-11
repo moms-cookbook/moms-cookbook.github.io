@@ -12,10 +12,9 @@ class Nav extends Component {
     render() {
         return (
             <nav>
-                <h2>Moms Cook Book</h2>
                 <ul>
-                    <li><Link to="/">Anasayfa</Link></li>
-                    <li><Link to="/about">Hakkında</Link></li>
+                    <li className="head"><Link to="/">Moms Cook Book</Link></li>
+                    <li><Link to="/recipe">Recipes</Link></li>
                     {(this.state.loggedIn) ?
                         <li><Link to="/profile">Profile</Link></li>
                         :
@@ -26,6 +25,7 @@ class Nav extends Component {
                         :
                         <li><Link to="/login">Login</Link></li>
                     }
+                    <li><Link to="/about">About</Link></li>
                 </ul>
             </nav>
         )
